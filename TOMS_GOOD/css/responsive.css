@@ -118,3 +118,28 @@
   .hermes.tparrows {display: none;}
   .recent-single-post .post {width: 100%;padding: 12px 0 0 0;}
 }
+
+
+
+@media screen  and (min-width: 542px) {
+  .my-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: auto;
+    max-width: 500px;
+    max-height: 500px;
+    margin-top: 30px;
+    margin-bottom: -30px;
+  }
+}
+
+@media screen  and (max-width: 542px) {
+  .my-image {
+    height: auto;
+    width: auto;
+    margin-top: 30px;
+    margin-bottom: -30px;
+  }
+}

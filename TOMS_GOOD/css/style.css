@@ -649,17 +649,7 @@ animation-delay: .8s;
 ====================================================================
 
  ***/
-.my-image{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-  width: auto;
-  max-width: 500px;
-  max-height: 500px;
-  margin-top: 30px;
-  margin-bottom: -30px;
-}
+
 
 /*** 
 
