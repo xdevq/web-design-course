@@ -55,6 +55,18 @@
 /*** 
 
 ====================================================================
+  Revolution
+====================================================================
+
+ ***/
+
+ .tparrows{
+   display:none !important;
+ }
+
+/*** 
+
+====================================================================
   Loading Transition
 ====================================================================
 
@@ -193,9 +205,9 @@ animation-delay: .8s;
   clear: both;
  }
 .tran3s,.theme-main-menu .navbar-nav>li a,#project-section .project-gallery .single-img .opacity,
-#team-section .team-member-wrapper .single-team-member .member-name h6,
-#team-section .team-member-wrapper .single-team-member .member-name p,
-#team-section .team-member-wrapper .single-team-member .member-name ul,
+#author .team-member-wrapper .single-team-member .member-name h6,
+#author .team-member-wrapper .single-team-member .member-name p,
+#author .team-member-wrapper .single-team-member .member-name ul,
 #our-client .owl-theme .owl-dots .owl-dot span {
   -webkit-transition: all .3s ease-in-out;
      -moz-transition: all .3s ease-in-out;
@@ -203,7 +215,7 @@ animation-delay: .8s;
        -o-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
  }
-.tran4s,#service-section .single-service-content p,#project-section .project-gallery .single-img .opacity ul,
+.tran4s,#results .single-service-content p,#project-section .project-gallery .single-img .opacity ul,
 #project-section .project-gallery .single-img .opacity h6 a {
   -webkit-transition: all .4s ease-in-out;
      -moz-transition: all .4s ease-in-out;
@@ -222,7 +234,8 @@ animation-delay: .8s;
 }
 .theme-title {
   text-align: center;
-  margin: 95px 0 0 0;
+  margin-bottom: 95px;
+  margin-top: 95px;
 }
 .theme-title h2 {
   position: relative;
@@ -243,12 +256,12 @@ animation-delay: .8s;
 }
 .p-color,.theme-main-menu .navbar-nav>li.active>a,
 .theme-main-menu .navbar-nav>li>a:hover,#about-us .single-about-content:hover h5 a,
-#service-section .single-service-content:hover .icon-heading .icon,
-#service-section .single-service-content:hover .icon-heading h6 a,
+#results .single-service-content:hover .icon-heading .icon,
+#results .single-service-content:hover .icon-heading h6 a,
 #pricing-section .single-price-table a:hover,#blog-section .single-news-item .img a,
 #blog-section .single-news-item:hover .post p a,#blog-section .single-news-item .post h6:hover a,
-#contact-section .contact-address-content .left-side ul li:hover .icon,
-#contact-section .send-message form button:hover,.inner-page-banner .opacity ul li:last-child,
+#contact .contact-address-content .left-side ul li:hover .icon,
+#contact .send-message form button:hover,.inner-page-banner .opacity ul li:last-child,
 .blog-details-page aside .sidebar-news-list ul li a i,.monthly-header-title,
 .blog-details-page aside .sidebar-news-list ul li a:hover,.blog-details-page aside .sidebar-archives ul li a i,
 .blog-details-page aside .sidebar-archives ul li a:hover,.blog-details-page aside .sidebar-archives ul li a.active,
@@ -266,11 +279,11 @@ animation-delay: .8s;
   background: #d73e4d;
 }
 .banner .project-button,#about-us .icon,#about-us .single-about-content a.more,
-#service-section .single-service-content:hover,#project-section .project-menu ul li.active,
+#results .single-service-content:hover,#project-section .project-menu ul li.active,
 #project-section .project-menu ul li:hover,.page-middle-banner .opacity a,
-#team-section .team-member-wrapper .single-team-member .img .opacity h4,#pricing-section .single-price-table a,
+#author .team-member-wrapper .single-team-member .img .opacity h4,#pricing-section .single-price-table a,
 #our-client .owl-theme .owl-dots .owl-dot.active span, #our-client .owl-theme .owl-dots .owl-dot:hover span,
-#contact-section .contact-address-content .left-side ul li .icon,#contact-section .send-message form button,
+#contact .contact-address-content .left-side ul li .icon,#contact .send-message form button,
 .sidebar-tags ul li a:hover,.blog-details-post-wrapper .post-comment form button,
 .blog-details-post-wrapper .post-comment textarea:focus,.blog-details-post-wrapper .post-comment input:focus {
   border-color:#d73e4d;
@@ -283,6 +296,7 @@ animation-delay: .8s;
 ====================================================================
 
  ***/
+
 .theme-main-header {
   position: absolute;
   top:0;
@@ -390,9 +404,6 @@ animation-delay: .8s;
   animation-duration: 0.70s;
   animation-timing-function: ease-in-out;
 }
-.theme-main-header.fixed .logo {
-  margin-top: -8px;
-}
 /*** 
 
 ====================================================================
@@ -409,6 +420,11 @@ animation-delay: .8s;
 .banner h6 {
   font-weight: 500;
 }
+
+.project-button{
+  background-color: #d73e4d!important;
+}
+
 .banner .project-button {
   width: 170px;
   line-height: 50px;
@@ -459,28 +475,27 @@ animation-delay: .8s;
 ====================================================================
 
  ***/
-#service-section {
+#results {
   background: #232a34;
-  padding-bottom: 80px;
 }
-#service-section .theme-title h2,
-#service-section .theme-title p {
+#results .theme-title h2,
+#results .theme-title p {
   color:#fff;
 }
-#service-section .row {
+#results .row {
   margin: 50px 0 0 0;
 }
-#service-section .row [class*="col-"] {
+#results .row [class*="col-"] {
   padding-top: 25px;
 }
-#service-section .single-service-content {
+#results .single-service-content {
   border:1px solid #808489;
   text-align: center;
   margin-bottom: 20px;
   padding: 118px 23px 65px 23px;
   overflow: hidden;
 }
-#service-section .single-service-content p {
+#results .single-service-content p {
   -webkit-transition-delay: 0.3s; /* Safari */
   transition-delay: 0.3s;
   opacity: 0;
@@ -490,29 +505,29 @@ animation-delay: .8s;
        -o-transform: translate3D(0,200px,0);
           transform: translate3D(0,200px,0);
 }
-#service-section .single-service-content .icon-heading {
+#results .single-service-content .icon-heading {
   position: absolute;
   width: 100%;
   left:0;
   right: 0;
   top:120px;
 }
-#service-section .single-service-content .icon-heading .icon {
+#results .single-service-content .icon-heading .icon {
   font-size: 48px;
   color:#808489;
   width: 80px;
   margin: 0 auto;
   background: #232a34;
 }
-#service-section .single-service-content .icon-heading a {
+#results .single-service-content .icon-heading a {
   color:#808489;
   text-transform: capitalize;
   margin-top: 33px;
 }
-#service-section .single-service-content:hover .icon-heading {
+#results .single-service-content:hover .icon-heading {
   top:-10px;
 }
-#service-section .single-service-content:hover p {
+#results .single-service-content:hover p {
   opacity: 1;
   color: #fff;
   -webkit-transform: translate3D(0,0,0);
@@ -626,7 +641,7 @@ animation-delay: .8s;
           transform: scale(1);
 }
 #project-section .project-gallery .single-img img,
-#team-section .team-member-wrapper .single-team-member .img img,
+#author .team-member-wrapper .single-team-member .img img,
 #skill-section .img img,#blog-section .single-news-item .img img {
   -webkit-transition: all .6s ease-in-out;
      -moz-transition: all .6s ease-in-out;
@@ -635,7 +650,7 @@ animation-delay: .8s;
           transition: all .6s ease-in-out;
 }
 #project-section .project-gallery .single-img:hover img,
-#team-section .team-member-wrapper .single-team-member:hover .img img,
+#author .team-member-wrapper .single-team-member:hover .img img,
 #skill-section:hover .img img,#blog-section .single-news-item:hover .img img {
   -webkit-transform: scale3d(1.15,1.15,1);
      -moz-transform: scale3d(1.15,1.15,1);
@@ -690,22 +705,33 @@ animation-delay: .8s;
 ====================================================================
 
  ***/
-#team-section .team-member-wrapper {
+#author {
+  background: #232a34;
+}
+
+#author .theme-title h2,
+#author .theme-title p {
+  color:#fff;
+}
+
+#author .team-member-wrapper {
   margin: 60px 0 0 0;
 }
-#team-section .team-member-wrapper .float-left {
+#author .team-member-wrapper .author-photo {
+  margin-top: -30px !important;
+  margin: 0 auto;
   width: 33.333333333%;
   padding: 0 15px;
   overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 95px !important;
 }
-#team-section .team-member-wrapper .single-team-member,
-#team-section .team-member-wrapper .single-team-member .img {
+#author .team-member-wrapper .single-team-member,
+#author .team-member-wrapper .single-team-member .img {
   overflow: hidden;
   position: relative;
   text-align: center;
 }
-#team-section .team-member-wrapper .single-team-member .img .opacity {
+#author .team-member-wrapper .single-team-member .img .opacity {
   position: absolute;
   top:0;
   left:0;
@@ -723,35 +749,35 @@ animation-delay: .8s;
   -webkit-transform-origin: 0% 0%; /* Chrome, Safari, Opera */
   transform-origin: 0% 0%;
 }
-#team-section .team-member-wrapper .single-team-member .img .opacity h4,
-#team-section .team-member-wrapper .single-team-member .img .opacity span {
+#author .team-member-wrapper .single-team-member .img .opacity h4,
+#author .team-member-wrapper .single-team-member .img .opacity span {
   color:#696f78;
   text-transform: capitalize;
 }
-#team-section .team-member-wrapper .single-team-member .img .opacity h4 {
+#author .team-member-wrapper .single-team-member .img .opacity h4 {
   line-height: 40px;
   padding: 0 18px;
   border-width: 1px;
   display: inline-block;
 }
-#team-section .team-member-wrapper .single-team-member .img .opacity span {
+#author .team-member-wrapper .single-team-member .img .opacity span {
   font-weight: 700;
   font-size: 18px;
   display: block;
   margin: 22px 0 15px 0;
 }
-#team-section .team-member-wrapper .single-team-member .img .opacity p {
+#author .team-member-wrapper .single-team-member .img .opacity p {
   color: #373a3f;
   padding: 0 40px;
 }
-#team-section .team-member-wrapper .single-team-member .img .opacity h4,
-#team-section .team-member-wrapper .single-team-member .img .opacity span,
-#team-section .team-member-wrapper .single-team-member .img .opacity p {
+#author .team-member-wrapper .single-team-member .img .opacity h4,
+#author .team-member-wrapper .single-team-member .img .opacity span,
+#author .team-member-wrapper .single-team-member .img .opacity p {
   opacity: 0;
   -webkit-transition-delay: 0.2s; /* Safari */
   transition-delay: 0.2s;
 }
-#team-section .team-member-wrapper .single-team-member:hover .img .opacity {
+#author .team-member-wrapper .single-team-member:hover .img .opacity {
   opacity: 1;
   -webkit-transform: scale(1);
      -moz-transform: scale(1);
@@ -759,28 +785,28 @@ animation-delay: .8s;
        -o-transform: scale(1);
           transform: scale(1);
 }
-#team-section .team-member-wrapper .single-team-member:hover .img .opacity h4,
-#team-section .team-member-wrapper .single-team-member:hover .img .opacity span,
-#team-section .team-member-wrapper .single-team-member:hover .img .opacity p {
+#author .team-member-wrapper .single-team-member:hover .img .opacity h4,
+#author .team-member-wrapper .single-team-member:hover .img .opacity span,
+#author .team-member-wrapper .single-team-member:hover .img .opacity p {
   opacity: 1;
 }
-#team-section .team-member-wrapper .single-team-member .member-name {
+#author .team-member-wrapper .single-team-member .member-name {
   background: #e6e6e6;
   overflow: hidden;
   position: relative;
   min-height: 70px;
 }
-#team-section .team-member-wrapper .single-team-member .member-name h6 {
+#author .team-member-wrapper .single-team-member .member-name h6 {
   text-transform: capitalize;
   color:#696f78;
   margin-top: 12px;
 }
-#team-section .team-member-wrapper .single-team-member .member-name p {
+#author .team-member-wrapper .single-team-member .member-name p {
   color:#373a3f;
   margin: 5px 0 8px 0;
 }
-#team-section .team-member-wrapper .single-team-member:hover .member-name h6,
-#team-section .team-member-wrapper .single-team-member:hover .member-name p {
+#author .team-member-wrapper .single-team-member:hover .member-name h6,
+#author .team-member-wrapper .single-team-member:hover .member-name p {
   visibility: hidden;
   -webkit-transform: translate3D(0,-100px,0);
      -moz-transform: translate3D(0,-100px,0);
@@ -788,57 +814,57 @@ animation-delay: .8s;
        -o-transform: translate3D(0,-100px,0);
           transform: translate3D(0,-100px,0);
 }
-#team-section .team-member-wrapper .single-team-member .member-name ul li {
+#author .team-member-wrapper .single-team-member .member-name ul li {
   display: inline-block;
   margin-top: 13px;
 }
-#team-section .team-member-wrapper .single-team-member .member-name ul li a {
+#author .team-member-wrapper .single-team-member .member-name ul li a {
   width: 47px;
   line-height: 45px;
   font-size: 18px;
   margin: 0 7px;
   border:1px solid transparent;
 }
-#team-section .team-member-wrapper .single-team-member .member-name ul li:nth-child(1) a,
+#author .team-member-wrapper .single-team-member .member-name ul li:nth-child(1) a,
 .blog-details-post-wrapper .post-share-area .share-icon li:nth-child(2) a {
   color: #677fb5;
   border-color:#677fb5;
 }
-#team-section .team-member-wrapper .single-team-member .member-name ul li:nth-child(2) a,
+#author .team-member-wrapper .single-team-member .member-name ul li:nth-child(2) a,
 .blog-details-post-wrapper .post-share-area .share-icon li:nth-child(3) a {
   color: #70c2e9;
   border-color:#70c2e9;
 }
-#team-section .team-member-wrapper .single-team-member .member-name ul li:nth-child(3) a,
+#author .team-member-wrapper .single-team-member .member-name ul li:nth-child(3) a,
 .blog-details-post-wrapper .post-share-area .share-icon li:nth-child(4) a {
   color: #d8545d;
   border-color:#d8545d;
 }
-#team-section .team-member-wrapper .single-team-member .member-name ul li:nth-child(4) a,
+#author .team-member-wrapper .single-team-member .member-name ul li:nth-child(4) a,
 .blog-details-post-wrapper .post-share-area .share-icon li:nth-child(5) a {
   color: #007ab9;
   border-color:#007ab9;
 }
-#team-section .team-member-wrapper .single-team-member .member-name ul li:nth-child(1) a:hover,
+#author .team-member-wrapper .single-team-member .member-name ul li:nth-child(1) a:hover,
 .blog-details-post-wrapper .post-share-area .share-icon li:nth-child(2) a:hover {
   background: #677fb5;
 }
-#team-section .team-member-wrapper .single-team-member .member-name ul li:nth-child(2) a:hover,
+#author .team-member-wrapper .single-team-member .member-name ul li:nth-child(2) a:hover,
 .blog-details-post-wrapper .post-share-area .share-icon li:nth-child(3) a:hover {
   background: #70c2e9;
 }
-#team-section .team-member-wrapper .single-team-member .member-name ul li:nth-child(3) a:hover,
+#author .team-member-wrapper .single-team-member .member-name ul li:nth-child(3) a:hover,
 .blog-details-post-wrapper .post-share-area .share-icon li:nth-child(4) a:hover {
   background: #d8545d;
 }
-#team-section .team-member-wrapper .single-team-member .member-name ul li:nth-child(4) a:hover,
+#author .team-member-wrapper .single-team-member .member-name ul li:nth-child(4) a:hover,
 .blog-details-post-wrapper .post-share-area .share-icon li:nth-child(5) a:hover {
   background: #007ab9;
 }
-#team-section .team-member-wrapper .single-team-member .member-name ul li a:hover {
+#author .team-member-wrapper .single-team-member .member-name ul li a:hover {
   color:#fff !important;
 }
-#team-section .team-member-wrapper .single-team-member .member-name ul {
+#author .team-member-wrapper .single-team-member .member-name ul {
   position: absolute;
   width: 100%;
   top:0;
@@ -849,7 +875,7 @@ animation-delay: .8s;
        -o-transform: translate3D(0,100px,0);
           transform: translate3D(0,100px,0);
 }
-#team-section .team-member-wrapper .single-team-member:hover .member-name ul {
+#author .team-member-wrapper .single-team-member:hover .member-name ul {
   -webkit-transform: translate3D(0,0,0);
      -moz-transform: translate3D(0,0,0);
       -ms-transform: translate3D(0,0,0);
@@ -1098,22 +1124,22 @@ animation-delay: .8s;
 ====================================================================
 
  ***/
-#contact-section .contact-address-content h2 {
+#contact .contact-address-content h2 {
   margin: 95px 0 35px 0;
 }
-#contact-section .contact-address-content .left-side ul {
+#contact .contact-address-content .left-side ul {
   margin-top: 70px;
 }
-#contact-section .contact-address-content .left-side ul li{
+#contact .contact-address-content .left-side ul li{
   position: relative;
   padding-left: 85px;
   margin-bottom: 50px;
 }
-#contact-section .contact-address-content .left-side ul li h6 {
+#contact .contact-address-content .left-side ul li h6 {
   font-size: 14px;
   margin-bottom: 8px;
 }
-#contact-section .contact-address-content .left-side ul li .icon {
+#contact .contact-address-content .left-side ul li .icon {
   width: 60px;
   height: 60px;
   border-width: 1px;
@@ -1125,42 +1151,42 @@ animation-delay: .8s;
   color: #fff;
   font-size: 30px;
 }
-#contact-section .contact-address-content .left-side ul li:hover .icon {
+#contact .contact-address-content .left-side ul li:hover .icon {
   background: #fff;
 }
-#contact-section .contact-address-content #map {
+#contact .contact-address-content #map {
   width: 100%;
   height: 500px;
 }
-#contact-section .send-message {
+#contact .send-message {
   padding: 0 15px;
 }
-#contact-section .send-message h2 {
+#contact .send-message h2 {
   margin: 50px 0 40px 0;
 }
-#contact-section .send-message .single-input {
+#contact .send-message .single-input {
   margin-bottom: 20px;
   height: 50px;
 }
-#contact-section .send-message .single-input input,
-#contact-section .send-message form textarea {
+#contact .send-message .single-input input,
+#contact .send-message form textarea {
   width: 100%;
   height: 100%;
   border:1px solid #dfdfdf;
   padding: 0 15px;
 }
-#contact-section .send-message form textarea {
+#contact .send-message form textarea {
   height: 260px;
   max-width: 100%;
   max-height: 260px;
   margin-bottom: 25px;
   padding: 20px 15px;
 }
-#contact-section .send-message .single-input input:focus,
-#contact-section .send-message form textarea:focus {
+#contact .send-message .single-input input:focus,
+#contact .send-message form textarea:focus {
   border-color: #424040;
 }
-#contact-section .send-message form button {
+#contact .send-message form button {
   width: 140px;
   line-height: 40px;
   text-align: center;
@@ -1168,7 +1194,7 @@ animation-delay: .8s;
   text-transform: uppercase;
   border-width: 1px;
 }
-#contact-section .send-message form button:hover {
+#contact .send-message form button:hover {
   background: #fff;
 }
 /*** 
@@ -1244,7 +1270,6 @@ animation-delay: .8s;
 
  ***/
 footer {
-  margin: 100px 0 0 0;
   background: #1e1e1e;
   padding: 60px 0 25px 0;
   text-align: center;
