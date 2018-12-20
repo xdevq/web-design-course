@@ -671,33 +671,22 @@ animation-delay: .8s;
 /*** 
 
 ====================================================================
-  Page Middle Banner
+  Image
 ====================================================================
 
  ***/
-.page-middle-banner {
-  background: url(../images/home/1.jpg) no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  margin-top: 70px;
+.my-image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: auto;
+  max-width: 500px;
+  max-height: 500px;
+  margin-top: 30px;
+  margin-bottom: -30px;
 }
-.page-middle-banner .opacity {
-  background: rgba(0,0,0,0.8);
-  text-align: center;
-  padding: 134px 0 137px 0;
-}
-.page-middle-banner .opacity h3 {
-  color: #fff;
-  margin-bottom: 25px;
-}
-.page-middle-banner .opacity a {
-  width: 200px;
-  line-height: 45px;
-  color:#fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-width:1px;
-}
+
 /*** 
 
 ====================================================================
