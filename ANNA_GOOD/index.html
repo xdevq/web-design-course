@@ -26,19 +26,19 @@
         </button>
         <div class="navbar-collapse collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <li class="nav-item" onclick="hideNavbar()">
               <a class="nav-link" href="#anotation">Anotācija</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" onclick="hideNavbar()">
               <a class="nav-link" href="#results">Studiju Rezultāti</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" onclick="hideNavbar()">
               <a class="nav-link" href="#kp">Kredītpunkti</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" onclick="hideNavbar()">
               <a class="nav-link" href="#sources">Avoti</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" onclick="hideNavbar()">
               <a class="nav-link" href="#authors">Kursa Izstrādātāji</a>
             </li>
           </ul>
@@ -160,21 +160,21 @@
             <div class="col-lg-12">
               <h2 class="display-4" style="text-align: center;">Kursa izstrādātāji</h2>
             </div><div class="col-lg-6">
-              <div class="p-5">
+              <div class="p-5 less-padding-bottom">
                 <img class="img-fluid rounded-circle" src="img/author1.jpg" alt="">
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="p-5">
+              <div class="p-5 less-padding-top">
                 <h2 class="display-5" style="text-align: center;">doc. Agris Šostaks <br>Dr. sc. comp.</h2>
               </div>
             </div>
           <div class="col-lg-6">
-              <div class="p-5">
+              <div class="p-5 less-padding-bottom">
                 <img class="img-fluid rounded-circle" src="img/author2.jpg" alt="">
               </div>
             </div><div class="col-lg-6">
-              <div class="p-5">
+              <div class="p-5 less-padding-top">
                 <h2 class="display-5" style="text-align: center;">vad. pētn. Ēvalds Ikaunieks<br>Dr. sc. comp.</h2>
               </div>
             </div></div>
@@ -186,6 +186,14 @@
       </div>
       <!-- /.container -->
     </footer>
+
+
+    <script>
+        function hideNavbar() {
+            document.getElementById("navbarResponsive").classList.remove("show");
+        }
+    </script>
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
