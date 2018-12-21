@@ -18,6 +18,12 @@ h6 {
   font-weight: 800 !important;
 }
 
+.img-fluid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .btn-xl {
   text-transform: uppercase;
   padding: 1.5rem 3rem;
@@ -37,7 +43,7 @@ h6 {
 .navbar-custom {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.95);
 }
 
 .navbar-custom .navbar-brand {
@@ -130,13 +136,13 @@ header.masthead .bg-circle-4 {
 }
 
 .btn-primary {
-  background-color: #ff4300;
-  border-color: #ffffff;
+  background-color: #0f8f2a;
+  border-color: #0f8f2a;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #9d2900 !important;
-  border-color: #ffffff !important;
+  background-color: #0b611c !important;
+  border-color: #0b611c !important;
 }
 
 .btn-primary:focus {
