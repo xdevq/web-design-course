@@ -18,6 +18,10 @@ h6 {
   font-weight: 800 !important;
 }
 
+section {
+    padding-top: 72px;
+}
+
 ol {
   padding-left: 20px;
 }
@@ -151,8 +155,8 @@ header.masthead .bg-circle-4 {
 }
 
 .btn-primary:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(238, 9, 121, 0.5);
-  box-shadow: 0 0 0 0.2rem rgba(238, 9, 121, 0.5);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .btn-secondary {
