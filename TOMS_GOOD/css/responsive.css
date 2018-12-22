@@ -143,3 +143,9 @@
     margin-bottom: -30px;
   }
 }
+
+@media screen  and (max-width: 400px) {
+  .single-team-member {
+    width: auto !important;
+  }
+}
